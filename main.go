@@ -31,6 +31,15 @@ func drawRand() {
 	})
 }
 
+func drawFractal() {
+	cv.Translate(600, 1500)
+	cv.Rotate(4)
+
+	wnd.MainLoop(func() {
+		iterate()
+	})
+}
+
 var cv *canvas.Canvas
 var wnd *sdlcanvas.Window
 
@@ -43,11 +52,6 @@ func main() {
 		panic(err)
 	}
 	defer wnd.Destroy()
-	cv.Translate(600, 1500)
-	cv.Rotate(4)
-
-	wnd.MainLoop(func() {
-		iterate()
-	})
-	// drawRand()
+	drawFractal()
+	// drawRand() // Uncomment to see the distribution of random function
 }

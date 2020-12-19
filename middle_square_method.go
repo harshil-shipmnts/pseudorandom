@@ -1,5 +1,7 @@
 package main
 
+// Uncomment this file to use as the generator and comment all lines in linear_congruential_generator
+
 // import (
 // 	"fmt"
 // 	"math"
