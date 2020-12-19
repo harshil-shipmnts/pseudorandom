@@ -1,3 +1,5 @@
+// https://en.wikipedia.org/wiki/Barnsley_fern
+
 package main
 
 type rule struct {
