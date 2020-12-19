@@ -1,0 +1,3 @@
+# pseudorandom
+
+`go run *.go`
